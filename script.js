@@ -12,7 +12,7 @@ function write(text) {
     if(pos == text.length){
         clearInterval(writeNote);
         wishView.innerHTML=wish_html;
-        for(var i=0;i<=5;i++){
+        for(var i=0;i<=3;i++){
             cornify_add();
         }
    }
