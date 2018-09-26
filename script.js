@@ -12,9 +12,9 @@ function write(text) {
     if(pos == text.length){
         clearInterval(writeNote);
         wishView.innerHTML=wish_html;
-        for(var i=0;i<=3;i++){
-            cornify_add();
-        }
+        // for(var i=0;i<=3;i++){
+        //     cornify_add();
+        // }
    }
 }
 function playWish(words) {
