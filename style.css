@@ -1,0 +1,133 @@
+html {
+    font-size: 10px;
+  }
+
+  body {
+    background:#045ba1e1;
+    font-family: 'helvetica neue';
+    font-weight: 200;
+    font-size: 20px;
+  }
+
+  .wish-header{
+      text-align: center;
+      font-size: 40px;
+      font-weight: 400;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      color: white;
+  }
+  .wish-header span{
+    color: #e0860f;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+  .live-wish {
+    max-width:500px;
+    margin:50px auto;
+    background:white;
+    border-radius:5px;
+    box-shadow:10px 10px 0 rgba(0,0,0,0.1);
+    padding:1rem 2rem 1rem 5rem;
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(#d9eaf3), color-stop(4%, #fff)) 0 4px;
+    background-size: 100% 3rem;
+    position: relative;
+    line-height:3rem;
+  }
+  p {
+    margin: 0 0 3rem;
+    font-size: 1.2em;
+    font-family:tahoma;
+  }
+  .live-wish:before {
+    content: '';
+    position: absolute;
+    width: 4px;
+    top: 0;
+    left: 30px;
+    bottom: 0;
+    border: 1px solid;
+    border-color: transparent #f05656cc;
+  }
+  .live-wish .from{
+   font-family: cursive;
+   margin-left: 50%;
+  }
+  .live-wish .w1{
+      color: #08a822;
+      font-family: cursive;
+  }
+  .live-wish .w2{
+    color: #e0860f;
+    font-family: cursive;
+}
+.live-wish .w3{
+    color: #4068e9;
+    font-family: cursive;
+}
+
+.hoverable-container{
+    height:300px;
+    width:300px;
+    border-radius:50%;
+    border:10px solid Orange;
+    margin:10px auto 0px;
+    overflow:hidden;
+  }
+  
+  .overlay-text{
+    background:rgba(50,50,200,0.5);
+    border-radius:50%;
+    display:none;
+    height:300px;
+    width:300px;
+    transition-property:display;
+    transition-duration: 10000ms;
+    transition-timing-function:ease-in;
+    transition-delay:5000ms;
+    z-index:1;
+    position:absolute;
+  }
+  .overlay-text .text-content{
+    width:300px;
+    height:100px;
+    padding-top:20%;
+    color:#fff;
+  }
+  .text-content h3,.text-content h5{
+    text-align:center;
+  }
+  .text-content p{
+    padding-left:30px;
+  }
+  .visible-img-con{
+    background-color:transparent;
+    top:0%;
+    height:300px;
+    width:300px;
+    position:relative;
+  }
+  
+  .visible-img-con img{
+    height:300px;
+    width:300px;
+    border-radius:50%;
+    z-index:0;
+    position:absolute;
+  }
+  
+  .hoverable-container:hover .visible-img-con > .overlay-text{
+    display:block;
+    animation-name:myAnim;
+    animation-duration:600ms;
+    animation-play-state:forward;
+  }
+  @keyframes myAnim{
+    from{
+      opacity:0;
+    }
+    to{
+      opacity: 1;
+    }
+  }
+  @media only screen and (max-width:600px) {
+
+  }
