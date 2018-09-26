@@ -120,6 +120,9 @@ html {
     animation-duration:600ms;
     animation-play-state:forward;
   }
+  #cornifycount{
+      visibility: hidden;
+  }
   @keyframes myAnim{
     from{
       opacity:0;
