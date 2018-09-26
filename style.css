@@ -3,7 +3,7 @@ html {
   }
 
   body {
-    background:#045ba1e1;
+    background:#045da1;
     font-family: 'helvetica neue';
     font-weight: 200;
     font-size: 20px;
@@ -14,7 +14,7 @@ html {
       font-size: 40px;
       font-weight: 400;
       font-family: Georgia, 'Times New Roman', Times, serif;
-      color: rgb(26, 24, 24);
+      color: #f8f5f5;
   }
   .wish-header span{
     color: #e0860f;
